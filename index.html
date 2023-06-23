@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>drag'n drop</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="contener">
+
+        <div class="header">
+            <h1>Trello</h1>
+            <h2>Workspaces</h2>
+            <h2>Recent</h2>
+            <h2>Starred</h2>
+            <button class="create">Create</button>
+            <input type="text" class="search" placeholder="search">
+            <div class="flex_icons">
+                <img width="30px" src="img/outline_notifications_black_24dp.png" alt="">
+                <img width="30px" src="img/outline_report_black_24dp.png" alt="">
+                <img width="50px" src="img/daler_aka.svg" alt="">
+            </div>
+        </div>
+
+        <div class="emptys_flex_box">
+            <div class="empty" id="boxes">
+                <h2>Todo</h2>
+                <div class="contener"></div>
+           
+            </div>
+            <div class="empty" id="two">
+                <h2>Doing</h2>
+
+            </div>
+            <div class="empty" id="three">
+                <h2>Done</h2>
+            </div>
+        </div><!-- empty_flex_box -->
+    </div><!-- contener -->
+
+
+
+
+
+    <div class="contener_modal">
+        <div class="modal">
+
+            <form name="change" class="change">
+                <div class="one_inp">
+                    <p>Task name</p>
+                    <input required type="text" class="chiken" name="task">
+                </div>
+                <div class="two_inp">
+                    <p>Task description</p>
+                    <input required type="text" class="price" name="description">
+                </div>
+                <div class="three_inp">
+                    <p>Status</p>
+                    <input required type="text" class="price" name="status">
+                </div>
+                <div class="foor_inp">
+                    <p>Student's Choice</p>
+                    <select class="students" name="name" id="name">
+                        <option value="Alex">Alex</option>
+                        <option value="Muhammad">Muhammad</option>
+                        <option value="Otabek">Otabek</option>
+                        <option value="Daler">Daler</option>
+                        <option value="Azamat">Azamat</option>
+                        <option value="Alisher">Alisher</option>
+                        <option value="Malik">Malik</option>
+                        <option value="Davlat">Davlat</option>
+                        <option value="Timur">Timur</option>
+
+                    </select>
+                </div>
+                <div class="five_inp">
+                    <p>Deadline</p>
+                    <input required type="date" class="price" name="deline">
+                </div>
+                <button class="yes">Show</button>
+                <br>
+            </form>
+            <button class="close">Close</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
